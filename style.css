@@ -1,0 +1,97 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 33px 0px 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-between;
+  max-width: 943px;
+}
+
+.menu-item {
+  display: inline;
+  flex-basis: 95px;
+  color: #828282;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.menu-item:hover {
+  color: black;
+}
+
+.vector {
+  max-width: 80%;
+}
+
+.info {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.name {
+  margin-top: 39.39px;
+  font-size: 47.339px;
+  flex-basis: 123.513px;
+}
+
+.role {
+  margin-top: 94.77px;
+  width: 155.646px;
+  height: 44.065px;
+  font-size: 18px;
+  stroke-width: 1px;
+  stroke: #828282;
+}
+
+.lang {
+  transform: rotate(-90deg);
+  font-size: 16px;
+  width: 85px;
+}
+
+.ru {
+  color: #828282;
+}
+
+.photo {
+  margin-top: 50px;
+  max-width: 943px;
+  max-height: 387px;
+}
+
+.about {
+  display: flex;
+  text-align: center;
+  margin-top: 104.06px;
+  background: #f6f6f6;
+  max-width: 1445px;
+  max-height: 506px;
+}
+
+.about-h2 {
+  font-weight: 700;
+  font-size: 34px;
+}
+
+.about-text {
+  margin-top: 18px;
+  width: 485.344px;
+  height: 218px;
+  font-size: 18px;
+}
