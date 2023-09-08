@@ -7,18 +7,19 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 943px;
+}
+
 .main {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0px auto;
+  overflow: hidden;
+  flex-direction: column;
 }
 
 .container {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
   max-width: 943px;
+  margin: 0px auto;
 }
 
 @media (max-width: 1200px) {
@@ -26,7 +27,6 @@
     max-width: 970px;
   }
 }
-
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
@@ -36,6 +36,12 @@
   .container {
     max-width: none;
   }
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
 }
 
 .menu-item {
@@ -51,13 +57,18 @@
   color: black;
 }
 
-.vector {
-  max-width: 80%;
+.photo {
+width: 100%;
 }
 
 .info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-basis: 95px;
   list-style: none;
   text-transform: capitalize;
+  margin-bottom: 50px;
 }
 
 .name {
@@ -82,12 +93,6 @@
   color: #828282;
 }
 
-.photo {
-  margin-top: 50px;
-  max-width: 943px;
-  max-height: 387px;
-}
-
 .about {
   display: flex;
   text-align: center;
@@ -104,14 +109,8 @@
 .about-text {
   margin-top: 30px;
   margin-bottom: 80px;
-  max-width: 485.344px;
   max-height: 218px;
   font-size: 18px;
-}
-
-.skills {
-  margin: 0 auto;
-  max-width: 943px;
 }
 
 .skills-text {
@@ -123,6 +122,7 @@
 
 .icons {
   display: flex;
+  flex: 1 0;
   justify-content: space-between;
   margin-bottom: 110px;
 }
@@ -131,6 +131,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* flex: 1 0 100px; */
 }
 
 .icon-name {
@@ -140,24 +141,40 @@
 }
 
 .portfolio {
+  display: flex;
+  text-align: center;
+  padding-top: 1px;
   background: #f6f6f6;
 }
 
 .screen {
-  margin-top: 47px;
-  margin-bottom: 44.88px;
+  margin-top: 50px;
+  margin-bottom: 45px;
 }
 
+.links {
+  margin-bottom: 60px;
+}
 .portfolio-link {
   color: black;
   font-size: 18px;
   text-decoration: none;
-  margin-bottom: 80px;
 }
 
 .portfolio-link:hover {
   text-decoration-line: underline;
 }
+
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+/* 
+@media (max-width: 767px) {
+  .contacts {
+    flex-grow: 1;
+  }
+} */
 
 .contacts-text {
   text-align: center;
@@ -174,7 +191,6 @@
   border: none;
   border-radius: 30px;
   font-size: 18px;
-  align-items: center;
   margin-bottom: 92px;
 }
 

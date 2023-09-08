@@ -15,19 +15,15 @@
     <section class="main">
       <header class="header">
         <div class="container">
-          <ul class="menu container">
+          <ul class="menu">
             <li class="menu-item">Home</li>
             <li class="menu-item">About me</li>
             <li class="menu-item">Skills</li>
             <li class="menu-item">Portfolio</li>
             <li class="menu-item">Contacts</li>
           </ul>
-        </div>
-        <div class="vector">
-          <img src="./images/icons/vector.svg">
-        </div>
-        <div class="container">
-          <ul class="info container">
+          <img src="./images/icons/vector.svg" class="photo">
+          <ul class="info">
             <li class="name">alona astakhova</li>
             <li class="role">
               front end | web developer <br />
@@ -38,15 +34,13 @@
                 <span class="eng">|eng</span>
             </li>
           </ul>
-        </div>
-        <div class="photo">
-          <img src="./images/girl.png" alt="" />
+          <img src="./images/girl.png" class="photo container" alt="" />
         </div>
       </header>
     </section>
 
-    <section class="about main">
-      <div>
+    <section class="about">
+      <div class="container">
         <h2 class="h2">About me</h2>
         <p class="about-text">
           Developer with 10+ years of experience in programming and 1+ years in
@@ -56,75 +50,85 @@
           devices. Willingness to quickly learn and use new technologies or
           frameworks.
           <br />Able to effectively self-manage independently and within a team
-          setting
+          setting.
         </p>
       </div>
     </section>
 
-    <section class="skills">
-      <h2 class="h2">Skills</h2>
-      <p class="skills-text">I know such technologies as</p>
-      <div class="icons">
-        <div class="icon-item">
-          <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
-          <span class="icon-name">JavaScript</span>
-          <img src="./images/level4.png" alt="level of knowledge" />
-        </div>
-        <div class="icon-item">
-          <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
-          <span class="icon-name">TypeScript</span>
-          <img src="./images/level3.png" alt="level of knowledge" />
-        </div>
-        <div class="icon-item">
-          <img src="./images/icons/react.svg" alt="React logo">
-          </svg>
-          <span class="icon-name">React</span>
-          <img src="./images/level4.png" alt="Level of knowledge" />
-        </div>
-        <div class="icon-item">
-         <img src="./images/icons/github.svg" alt="GitHub logo">
-          <span class="icon-name">GitHub</span>
-          <img src="./images/level4.png" alt="level of knowledge" />
-        </div>
-        <div class="icon-item">
-       <img src="./images/icons/figma.svg" alt="Figma logo">
-          <span class="icon-name">Figma</span>
-          <img src="./images/level4.png" alt="level of knowledge" />
+    <section class="skill">
+      <div class="container">
+        <h2 class="h2">Skills</h2>
+        <p class="skills-text">I know such technologies as</p>
+        <div class="icons container">
+          <div class="icon-item">
+            <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
+            <span class="icon-name">JavaScript</span>
+            <img src="./images/level4.png" alt="level of knowledge" />
+          </div>
+          <div class="icon-item">
+            <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
+            <span class="icon-name">TypeScript</span>
+            <img src="./images/level3.png" alt="level of knowledge" />
+          </div>
+          <div class="icon-item">
+            <img src="./images/icons/react.svg" alt="React logo">
+            </svg>
+            <span class="icon-name">React</span>
+            <img src="./images/level4.png" alt="Level of knowledge" />
+          </div>
+          <div class="icon-item">
+          <img src="./images/icons/github.svg" alt="GitHub logo">
+            <span class="icon-name">GitHub</span>
+            <img src="./images/level4.png" alt="level of knowledge" />
+          </div>
+          <div class="icon-item">
+            <img src="./images/icons/figma.svg" alt="Figma logo">
+            <span class="icon-name">Figma</span>
+            <img src="./images/level4.png" alt="level of knowledge" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="portfolio main">
-      <div>
+    <section class="portfolio">
+      <div class="container">
         <h2 class="h2">Portfolio</h2>
         <img
-          class="screen"
+          class="screen container"
           src="./images/fashion-store.png"
-          alt="fashion store screen" />
-        <a class=" portfolio-link main" href="#" target="_blank">
-          Online fashion store - Homepage
-        </a>
+          alt="fashion store screen"/>
+          <div class="links">
+            <a class="portfolio-link" href="#" target="_blank">
+              Online fashion store - Homepage
+            </a>
+          </div>
         <img
-          class="screen"
+          class="screen container"
           src="./images/reebok.png"
-          alt="reebok store screen" />
-        <a class=" portfolio-link main" href="#" target="_blank">
-          Reebok Store - Concept
-        </a>
-        <img class="screen" src="./images/braun.png" alt="braun store screen" />
-        <a class=" portfolio-link main" href="#" target="_blank">
-          Braun Landing Page - Concept
-        </a>
+          alt="reebok store screen"/>
+          <div class="links">
+            <a class="portfolio-link" href="#" target="_blank">
+              Reebok Store - Concept
+            </a>
+          </div>
+        <img class="screen container" src="./images/braun.png" alt="braun store screen" />
+          <div class="links">
+            <a class="portfolio-link" href="#" target="_blank">
+              Braun Landing Page - Concept
+            </a>
+          </div>
       </div>
     </section>
 
-    <section class="contacts main">
-      <div>
+    <section class="contacts">
+      <div class="container">
         <h2 class="h2">Contacts</h2>
         <p class="contacts-text">
           Want to know more or just chat? <br />You are welcome!
         </p>
-        <button class="button main">Send message</button>
+        <div class="contacts">
+          <button class="button">Send message</button>
+        </div>
         <div class="contacts-icons">
           <img
             class="contacts-icon"
