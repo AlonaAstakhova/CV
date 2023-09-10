@@ -22,22 +22,6 @@ body {
   margin: 0px auto;
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
-
 .menu {
   display: flex;
   flex: 1;
@@ -108,7 +92,8 @@ width: 100%;
 
 .about-text {
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+  max-width: 500px;
   max-height: 218px;
   font-size: 18px;
 }
@@ -122,7 +107,6 @@ width: 100%;
 
 .icons {
   display: flex;
-  flex: 1 0;
   justify-content: space-between;
   margin-bottom: 110px;
 }
@@ -131,7 +115,6 @@ width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* flex: 1 0 100px; */
 }
 
 .icon-name {
@@ -150,6 +133,7 @@ width: 100%;
 .screen {
   margin-top: 50px;
   margin-bottom: 45px;
+  width: 100%;
 }
 
 .links {
@@ -169,12 +153,6 @@ width: 100%;
   display: flex;
   justify-content: center;
 }
-/* 
-@media (max-width: 767px) {
-  .contacts {
-    flex-grow: 1;
-  }
-} */
 
 .contacts-text {
   text-align: center;
@@ -210,4 +188,37 @@ width: 100%;
   text-align: center;
   font-size: 14px;
   margin-bottom: 80px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+  .icons {
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding: 0 15px 0 15px;
+  }
+  .h2 {
+    margin-top: 80px;
+    font-size: 55px;
+  }
+  .about-text {
+    font-size: 30px;
+    max-height: 500px;
+    max-width: 700px;
+  }
+  .icons {
+    flex-flow: column wrap;
+    gap: 15px;
+  }
 }
