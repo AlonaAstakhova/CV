@@ -22,6 +22,50 @@ body {
   margin: 0px auto;
 }
 
+.menu-burger {
+  display: none;
+  position: relative;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.menu-burger span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+  transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.menu-burger span:nth-child(1){
+  transform: translateY(-10px);
+}
+
+.menu-burger span:nth-child(3){
+  transform: translateY(10px);
+}
+
+.header.open .menu-burger span {
+  background-color: #828282;
+}
+
+.header.open .menu-burger span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+}
+
+.header.open .menu-burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .menu-burger span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+
 .menu {
   display: flex;
   flex: 1;
@@ -30,6 +74,7 @@ body {
 
 .menu-item {
   display: inline;
+  text-decoration: none;
   flex-basis: 95px;
   color: #828282;
   font-size: 18px;
@@ -208,6 +253,29 @@ width: 100%;
     max-width: none;
     padding: 0 15px 0 15px;
   }
+  .header.open .menu{
+    transform: translateX(100%);
+  }
+  .menu-burger{
+    display: block;  
+  }
+  .menu{
+    position: absolute;
+    flex-direction: column;
+    left: -350px;
+    top: 0;
+    width: 350px;
+    background-color:white;
+    padding: 75px 20px 20px 20px;
+    transition: transform .5s;
+  }
+  .menu-item {
+    color: #828282;
+    text-decoration: none;
+    font-size: 34px;
+    display: block;
+    padding: 10px 0;
+  }
   .h2 {
     margin-top: 80px;
     font-size: 55px;
@@ -217,8 +285,34 @@ width: 100%;
     max-height: 500px;
     max-width: 700px;
   }
+  .skills-text {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
   .icons {
     flex-flow: column wrap;
     gap: 15px;
+  }
+  .icon-name{
+    font-size: 24px;
+    margin: 0 0 15px;
+  }
+  .contacts-text{
+    font-size: 30px;
+  }
+  .button {
+    min-width: 400px;
+    min-height: 60px;
+    font-size: 26px;
+  }
+  .contacts-text-like{
+    font-size: 24px;
+  }
+  .contacts-icon {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .portfolio-link {
+    font-size: 24px;
   }
 }

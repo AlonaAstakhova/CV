@@ -10,13 +10,20 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>CV</title>
+    <script defer src="/index.js"></script>
   </head>
   <body>
     <section class="main">
-      <header class="header">
+      <header class="header open">
         <div class="container">
+          <button class="menu-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <ul class="menu">
             <li class="menu-item">Home</li>
+              <!-- <a class="menu-link" href="#">Home</a> -->
             <li class="menu-item">About me</li>
             <li class="menu-item">Skills</li>
             <li class="menu-item">Portfolio</li>
@@ -63,28 +70,42 @@
         <p class="skills-text">I know such technologies as</p>
         <div class="icons container">
           <div class="icon-item">
-            <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/icons/javascript-300.svg"></source>
+              <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
+            </picture>         
             <span class="icon-name">JavaScript</span>
             <img src="./images/level4.png" alt="level of knowledge" />
           </div>
           <div class="icon-item">
-            <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/icons/typescript-300.svg"></source>
+              <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
+            </picture>    
             <span class="icon-name">TypeScript</span>
             <img src="./images/level3.png" alt="level of knowledge" />
           </div>
           <div class="icon-item">
-            <img src="./images/icons/react.svg" alt="React logo">
-            </svg>
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/icons/react-300.svg"></source>
+              <img src="./images/icons/react.svg" alt="React logo">
+            </picture>   
             <span class="icon-name">React</span>
             <img src="./images/level4.png" alt="Level of knowledge" />
           </div>
           <div class="icon-item">
-          <img src="./images/icons/github.svg" alt="GitHub logo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/icons/github-300.svg"></source>
+              <img src="./images/icons/github.svg" alt="GitHub logo">
+            </picture> 
             <span class="icon-name">GitHub</span>
             <img src="./images/level4.png" alt="level of knowledge" />
           </div>
           <div class="icon-item">
-            <img src="./images/icons/figma.svg" alt="Figma logo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./images/icons/figma-300.svg"></source>
+              <img src="./images/icons/figma.svg" alt="Figma logo">
+            </picture> 
             <span class="icon-name">Figma</span>
             <img src="./images/level4.png" alt="level of knowledge" />
           </div>
@@ -132,14 +153,21 @@
           <button class="button">Send message</button>
         </div>
         <div class="contacts-icons">
-          <img
+          <picture>
+            <source media="(max-width: 767px)" srcset="./images/icons/linkedin-100.svg"></source>
+            <img
             class="contacts-icon"
             src="./images/icons/linkedin-contacts.svg"
             alt="LinkedIn" />
-          <img
+          </picture>         
+          <picture>
+            <source media="(max-width: 767px)" srcset="./images/icons/github-contacts-100.svg"></source>
+            <img
             class="contacts-icon"
             src="./images/icons/github-contacts.svg"
             alt="GitHub" />
+          </picture>     
+
           <img class="contacts-icon" src="./images/icons/leetcode.svg" alt="LeetCode" />
           <img class="contacts-icon" src="./images/icons/codewars.svg" alt="CodeWars" />
         </div>
