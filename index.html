@@ -13,171 +13,174 @@
     <script defer src="/index.js"></script>
   </head>
   <body>
-    <section class="main">
-      <header class="header open">
-        <div class="container">
-          <button class="menu-burger" id="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="menu">
-            <li class="menu-item">Home</li>
-              <!-- <a class="menu-link" href="#">Home</a> -->
-            <li class="menu-item">About me</li>
-            <li class="menu-item">Skills</li>
-            <li class="menu-item">Portfolio</li>
-            <li class="menu-item">Contacts</li>
-          </ul>
-          <img src="./images/icons/vector.svg" class="vector">
-          <ul class="info">
-            <li class="name">alona astakhova</li>
-            <li class="role">
-              front end | web developer <br />
-              Irvine, CA
-            </li>
-            <li class="lang">
-                <span class="ru">ru</span>
-                <span class="eng">|eng</span>
-            </li>
-          </ul>
-          <picture>
-            <source media="(max-width: 767px)" srcset="./images/girl-small.png"></source>
-            <img src="./images/girl.png" class="photo container" alt="" />
-          </picture>   
-        </div>
-      </header>
-    </section>
-
-    <section class="about">
-      <div class="container">
-        <h2 class="h2">About me</h2>
-        <p class="about-text">
-          Developer with 10+ years of experience in programming and 1+ years in
-          Web development.</p>
-          <p class="about-text">
-            Experience with responsive design and coding for all browsers and
-            devices. Willingness to quickly learn and use new technologies or
-            frameworks.
-          </p>
-          <p class="about-text">
-            Able to effectively self-manage independently and within a team
-          setting.
-        </p>
-      </div>
-    </section>
-
-    <section class="skill">
-      <div class="container">
-        <h2 class="h2">Skills</h2>
-        <p class="skills-text">I know such technologies as</p>
-        <div class="icons container">
-          <div class="icon-item">
+    <div class="wraper">
+      <section class="main" id="main">
+        <header class="header">
+          <div class="container">
+            <button class="menu-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu" id="menu">
+              <li class="menu-item">Home</li>
+                <!-- <a class="menu-link" href="#">Home</a> -->
+              <li class="menu-item">About me</li>
+              <li class="menu-item">Skills</li>
+              <li class="menu-item">Portfolio</li>
+              <li class="menu-item">Contacts</li>
+            </ul>
+            <img src="./images/icons/vector.svg" class="vector">
+            <ul class="info">
+              <li class="name">alona astakhova</li>
+              <li class="role">
+                front end | web developer <br />
+                Irvine, CA
+              </li>
+              <li class="lang">
+                  <span class="ru">ru</span>
+                  <span class="eng">|eng</span>
+              </li>
+            </ul>
             <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/javascript-300.svg"></source>
-              <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
-            </picture>         
-            <span class="icon-name">JavaScript</span>
-            <img src="./images/level4.png" alt="level of knowledge" />
-          </div>
-          <div class="icon-item">
-            <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/typescript-300.svg"></source>
-              <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
-            </picture>    
-            <span class="icon-name">TypeScript</span>
-            <img src="./images/level3.png" alt="level of knowledge" />
-          </div>
-          <div class="icon-item">
-            <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/react-300.svg"></source>
-              <img src="./images/icons/react.svg" alt="React logo">
+              <source media="(max-width: 767px)" srcset="./images/girl-small.png"></source>
+              <img src="./images/girl.png" class="photo container" alt="" />
             </picture>   
-            <span class="icon-name">React</span>
-            <img src="./images/level4.png" alt="Level of knowledge" />
           </div>
-          <div class="icon-item">
+        </header>
+      </section>
+  
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="h2">About me</h2>
+          <p class="about-text">
+            Developer with 10+ years of experience in programming and 1+ years in
+            Web development.</p>
+            <p class="about-text">
+              Experience with responsive design and coding for all browsers and
+              devices. Willingness to quickly learn and use new technologies or
+              frameworks.
+            </p>
+            <p class="about-text">
+              Able to effectively self-manage independently and within a team
+            setting.
+          </p>
+        </div>
+      </section>
+  
+      <section class="skill" id="skills">
+        <div class="container">
+          <h2 class="h2">Skills</h2>
+          <p class="skills-text">I know such technologies as</p>
+          <div class="icons container">
+            <div class="icon-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/icons/javascript-300.svg"></source>
+                <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
+              </picture>         
+              <span class="icon-name">JavaScript</span>
+              <img src="./images/level4.png" alt="level of knowledge" />
+            </div>
+            <div class="icon-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/icons/typescript-300.svg"></source>
+                <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
+              </picture>    
+              <span class="icon-name">TypeScript</span>
+              <img src="./images/level3.png" alt="level of knowledge" />
+            </div>
+            <div class="icon-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/icons/react-300.svg"></source>
+                <img src="./images/icons/react.svg" alt="React logo">
+              </picture>   
+              <span class="icon-name">React</span>
+              <img src="./images/level4.png" alt="Level of knowledge" />
+            </div>
+            <div class="icon-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/icons/github-300.svg"></source>
+                <img src="./images/icons/github.svg" alt="GitHub logo">
+              </picture> 
+              <span class="icon-name">GitHub</span>
+              <img src="./images/level4.png" alt="level of knowledge" />
+            </div>
+            <div class="icon-item">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./images/icons/figma-300.svg"></source>
+                <img src="./images/icons/figma.svg" alt="Figma logo">
+              </picture> 
+              <span class="icon-name">Figma</span>
+              <img src="./images/level4.png" alt="level of knowledge" />
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="h2">Portfolio</h2>
+          <img
+            class="screen container"
+            src="./images/fashion-store.png"
+            alt="fashion store screen"/>
+            <div class="links">
+              <a class="portfolio-link" href="#" target="_blank">
+                Online fashion store - Homepage
+              </a>
+            </div>
+          <img
+            class="screen container"
+            src="./images/reebok.png"
+            alt="reebok store screen"/>
+            <div class="links">
+              <a class="portfolio-link" href="#" target="_blank">
+                Reebok Store - Concept
+              </a>
+            </div>
+          <img class="screen container" src="./images/braun.png" alt="braun store screen" />
+            <div class="links">
+              <a class="portfolio-link" href="#" target="_blank">
+                Braun Landing Page - Concept
+              </a>
+            </div>
+        </div>
+      </section>
+  
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="h2">Contacts</h2>
+          <p class="contacts-text">
+            Want to know more or just chat? <br />You are welcome!
+          </p>
+          <div class="contacts">
+            <button class="button">Send message</button>
+          </div>
+          <div class="contacts-icons">
             <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/github-300.svg"></source>
-              <img src="./images/icons/github.svg" alt="GitHub logo">
-            </picture> 
-            <span class="icon-name">GitHub</span>
-            <img src="./images/level4.png" alt="level of knowledge" />
-          </div>
-          <div class="icon-item">
+              <source media="(max-width: 767px)" srcset="./images/icons/linkedin-100.svg"></source>
+              <img
+              class="contacts-icon"
+              src="./images/icons/linkedin-contacts.svg"
+              alt="LinkedIn" />
+            </picture>         
             <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/figma-300.svg"></source>
-              <img src="./images/icons/figma.svg" alt="Figma logo">
-            </picture> 
-            <span class="icon-name">Figma</span>
-            <img src="./images/level4.png" alt="level of knowledge" />
+              <source media="(max-width: 767px)" srcset="./images/icons/github-contacts-100.svg"></source>
+              <img
+              class="contacts-icon"
+              src="./images/icons/github-contacts.svg"
+              alt="GitHub" />
+            </picture>     
+  
+            <img class="contacts-icon" src="./images/icons/leetcode.svg" alt="LeetCode" />
+            <img class="contacts-icon" src="./images/icons/codewars.svg" alt="CodeWars" />
           </div>
+          <p class="contacts-text-like">
+            Like me on <br />LinkedIn, GitHub, LeetCode, CodeWars
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="portfolio">
-      <div class="container">
-        <h2 class="h2">Portfolio</h2>
-        <img
-          class="screen container"
-          src="./images/fashion-store.png"
-          alt="fashion store screen"/>
-          <div class="links">
-            <a class="portfolio-link" href="#" target="_blank">
-              Online fashion store - Homepage
-            </a>
-          </div>
-        <img
-          class="screen container"
-          src="./images/reebok.png"
-          alt="reebok store screen"/>
-          <div class="links">
-            <a class="portfolio-link" href="#" target="_blank">
-              Reebok Store - Concept
-            </a>
-          </div>
-        <img class="screen container" src="./images/braun.png" alt="braun store screen" />
-          <div class="links">
-            <a class="portfolio-link" href="#" target="_blank">
-              Braun Landing Page - Concept
-            </a>
-          </div>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="container">
-        <h2 class="h2">Contacts</h2>
-        <p class="contacts-text">
-          Want to know more or just chat? <br />You are welcome!
-        </p>
-        <div class="contacts">
-          <button class="button">Send message</button>
-        </div>
-        <div class="contacts-icons">
-          <picture>
-            <source media="(max-width: 767px)" srcset="./images/icons/linkedin-100.svg"></source>
-            <img
-            class="contacts-icon"
-            src="./images/icons/linkedin-contacts.svg"
-            alt="LinkedIn" />
-          </picture>         
-          <picture>
-            <source media="(max-width: 767px)" srcset="./images/icons/github-contacts-100.svg"></source>
-            <img
-            class="contacts-icon"
-            src="./images/icons/github-contacts.svg"
-            alt="GitHub" />
-          </picture>     
-
-          <img class="contacts-icon" src="./images/icons/leetcode.svg" alt="LeetCode" />
-          <img class="contacts-icon" src="./images/icons/codewars.svg" alt="CodeWars" />
-        </div>
-        <p class="contacts-text-like">
-          Like me on <br />LinkedIn, GitHub, LeetCode, CodeWars
-        </p>
-      </div>
-    </section>
   </body>
 </html>

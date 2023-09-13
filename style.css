@@ -11,6 +11,12 @@ body {
   min-width: 943px;
 }
 
+.wraper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 .main {
   display: flex;
   overflow: hidden;
@@ -25,12 +31,14 @@ body {
 .menu-burger {
   display: none;
   position: relative;
-  margin-top: 65px;
+  margin: 50px 50px 0;
   width: 60px;
   height: 60px;
   border: none;
   background-color: transparent;
   z-index: 2;
+  left: calc(100% - 140px);
+  cursor: pointer;
 }
 
 .menu-burger span {
@@ -39,7 +47,8 @@ body {
   height: 5px;
   background-color: black;
   left: 5px;
-  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.5s;
+  will-change: transform;
 }
 
 .menu-burger span:nth-child(1) {
@@ -254,21 +263,21 @@ body {
     padding: 0 15px 0 15px;
   }
   .header.open .menu {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   .menu-burger {
     display: block;
-    margin-left: 50px;
   }
   .menu {
     position: absolute;
     flex-direction: column;
-    left: -350px;
+    right: -350px;
     top: 0;
     width: 350px;
     background-color: #FFF;
-    padding: 150px 20px 20px 70px;
-    transition: transform 0.5s;
+    padding: 50px 20px 20px 20px;
+    transition: transform .5s;
+    will-change: transform;
   }
   .menu-item {
     color: #828282;
@@ -291,6 +300,7 @@ body {
   .name {
     font-size: 70px;
     width: 50%;
+    margin-top: 0;
   }
   .role {
     font-size: 26px;
