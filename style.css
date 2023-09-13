@@ -2,8 +2,8 @@
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -19,15 +19,15 @@ body {
 
 .container {
   max-width: 943px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .menu-burger {
   display: none;
   position: relative;
-  margin-top: 15px;
-  width: 40px;
-  height: 40px;
+  margin-top: 65px;
+  width: 60px;
+  height: 60px;
   border: none;
   background-color: transparent;
   z-index: 2;
@@ -35,19 +35,19 @@ body {
 
 .menu-burger span {
   position: absolute;
-  width: 30px;
-  height: 3px;
+  width: 50px;
+  height: 5px;
   background-color: black;
   left: 5px;
-  transition: transform .5s, opacity .5s, background-color .5s;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
 
-.menu-burger span:nth-child(1){
-  transform: translateY(-10px);
+.menu-burger span:nth-child(1) {
+  transform: translateY(-12px);
 }
 
-.menu-burger span:nth-child(3){
-  transform: translateY(10px);
+.menu-burger span:nth-child(3) {
+  transform: translateY(12px);
 }
 
 .header.open .menu-burger span {
@@ -79,15 +79,15 @@ body {
   color: #828282;
   font-size: 18px;
   line-height: normal;
-  padding: 33px 0px 0px;
+  padding: 33px 0 0;
 }
 
 .menu-item:hover {
   color: black;
 }
 
-.photo {
-width: 100%;
+.vector, .photo {
+  width: 100%;
 }
 
 .info {
@@ -101,9 +101,9 @@ width: 100%;
 }
 
 .name {
-  margin-top: 39.39px;
-  font-size: 47.339px;
-  flex-basis: 123.513px;
+  margin-top: 40px;
+  font-size: 47px;
+  flex-basis: 124px;
 }
 
 .role {
@@ -185,7 +185,7 @@ width: 100%;
   margin-bottom: 60px;
 }
 .portfolio-link {
-  color: black;
+  color: #000;
   font-size: 18px;
   text-decoration: none;
 }
@@ -207,8 +207,8 @@ width: 100%;
 }
 
 .button {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #FFF;
   min-width: 180.5px;
   min-height: 42px;
   border: none;
@@ -220,7 +220,7 @@ width: 100%;
 .contacts-icons {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 45.76px;
+  margin-bottom: 46px;
 }
 
 .contacts-icon {
@@ -253,21 +253,22 @@ width: 100%;
     max-width: none;
     padding: 0 15px 0 15px;
   }
-  .header.open .menu{
+  .header.open .menu {
     transform: translateX(100%);
   }
-  .menu-burger{
-    display: block;  
+  .menu-burger {
+    display: block;
+    margin-left: 50px;
   }
-  .menu{
+  .menu {
     position: absolute;
     flex-direction: column;
     left: -350px;
     top: 0;
     width: 350px;
-    background-color:white;
-    padding: 75px 20px 20px 20px;
-    transition: transform .5s;
+    background-color: #FFF;
+    padding: 150px 20px 20px 70px;
+    transition: transform 0.5s;
   }
   .menu-item {
     color: #828282;
@@ -275,6 +276,25 @@ width: 100%;
     font-size: 34px;
     display: block;
     padding: 10px 0;
+  }
+  .vector,
+  .lang {
+    display: none;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .photo,
+  .info {
+    padding: 0 50px;
+  }
+  .name {
+    font-size: 70px;
+    width: 50%;
+  }
+  .role {
+    font-size: 26px;
+    margin: 20px;
   }
   .h2 {
     margin-top: 80px;
@@ -293,11 +313,11 @@ width: 100%;
     flex-flow: column wrap;
     gap: 15px;
   }
-  .icon-name{
+  .icon-name {
     font-size: 24px;
     margin: 0 0 15px;
   }
-  .contacts-text{
+  .contacts-text {
     font-size: 30px;
   }
   .button {
@@ -305,7 +325,7 @@ width: 100%;
     min-height: 60px;
     font-size: 26px;
   }
-  .contacts-text-like{
+  .contacts-text-like {
     font-size: 24px;
   }
   .contacts-icon {
