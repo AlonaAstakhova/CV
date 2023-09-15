@@ -86,13 +86,16 @@ body {
   text-decoration: none;
   flex-basis: 95px;
   color: #828282;
-  font-size: 18px;
   line-height: normal;
   padding: 33px 0 0;
 }
 
 .menu-item:hover {
   color: black;
+}
+
+.menu-link {
+  font-size: 18px;
 }
 
 .vector, .photo {
@@ -282,9 +285,11 @@ body {
   .menu-item {
     color: #828282;
     text-decoration: none;
-    font-size: 34px;
     display: block;
     padding: 10px 0;
+  }
+  .menu-link{
+    font-size: 34px;
   }
   .vector,
   .lang {

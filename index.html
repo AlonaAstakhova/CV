@@ -9,6 +9,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <title>CV</title>
     <script defer src="/index.js"></script>
   </head>
@@ -23,14 +28,23 @@
               <span></span>
             </button>
             <ul class="menu" id="menu">
-              <li class="menu-item">Home</li>
-                <!-- <a class="menu-link" href="#">Home</a> -->
-              <li class="menu-item">About me</li>
-              <li class="menu-item">Skills</li>
-              <li class="menu-item">Portfolio</li>
-              <li class="menu-item">Contacts</li>
+              <li class="menu-item">
+                <a class="menu-link" data-link="home">Home</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" data-link="about">About me</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" data-link="skills">Skills</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" data-link="portfolio">Portfolio</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" data-link="contacts">Contacts</a>
+              </li>
             </ul>
-            <img src="./images/icons/vector.svg" class="vector">
+            <img src="./images/icons/vector.svg" class="vector" />
             <ul class="info">
               <li class="name">alona astakhova</li>
               <li class="role">
@@ -38,36 +52,39 @@
                 Irvine, CA
               </li>
               <li class="lang">
-                  <span class="ru">ru</span>
-                  <span class="eng">|eng</span>
+                <span class="ru">ru</span>
+                <span class="eng">|eng</span>
               </li>
             </ul>
             <picture>
-              <source media="(max-width: 767px)" srcset="./images/girl-small.png"></source>
+              <source
+                media="(max-width: 767px)"
+                srcset="./images/girl-small.png" />
               <img src="./images/girl.png" class="photo container" alt="" />
-            </picture>   
+            </picture>
           </div>
         </header>
       </section>
-  
+
       <section class="about" id="about">
         <div class="container">
           <h2 class="h2">About me</h2>
           <p class="about-text">
-            Developer with 10+ years of experience in programming and 1+ years in
-            Web development.</p>
-            <p class="about-text">
-              Experience with responsive design and coding for all browsers and
-              devices. Willingness to quickly learn and use new technologies or
-              frameworks.
-            </p>
-            <p class="about-text">
-              Able to effectively self-manage independently and within a team
+            Developer with 10+ years of experience in programming and 1+ years
+            in Web development.
+          </p>
+          <p class="about-text">
+            Experience with responsive design and coding for all browsers and
+            devices. Willingness to quickly learn and use new technologies or
+            frameworks.
+          </p>
+          <p class="about-text">
+            Able to effectively self-manage independently and within a team
             setting.
           </p>
         </div>
       </section>
-  
+
       <section class="skill" id="skills">
         <div class="container">
           <h2 class="h2">Skills</h2>
@@ -75,78 +92,116 @@
           <div class="icons container">
             <div class="icon-item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./images/icons/javascript-300.svg"></source>
-                <img src="./images/icons/javascript.svg" alt="JavaScript logo" />
-              </picture>         
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/javascript-300.svg" />
+                <img
+                  src="./images/icons/javascript.svg"
+                  alt="JavaScript logo" />
+              </picture>
               <span class="icon-name">JavaScript</span>
               <img src="./images/level4.png" alt="level of knowledge" />
             </div>
             <div class="icon-item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./images/icons/typescript-300.svg"></source>
-                <img src="./images/icons/typescript.svg" alt="TypeScript logo" />
-              </picture>    
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/typescript-300.svg" />
+                <img
+                  src="./images/icons/typescript.svg"
+                  alt="TypeScript logo" />
+              </picture>
               <span class="icon-name">TypeScript</span>
               <img src="./images/level3.png" alt="level of knowledge" />
             </div>
             <div class="icon-item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./images/icons/react-300.svg"></source>
-                <img src="./images/icons/react.svg" alt="React logo">
-              </picture>   
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/react-300.svg" />
+                <img src="./images/icons/react.svg" alt="React logo" />
+              </picture>
               <span class="icon-name">React</span>
               <img src="./images/level4.png" alt="Level of knowledge" />
             </div>
             <div class="icon-item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./images/icons/github-300.svg"></source>
-                <img src="./images/icons/github.svg" alt="GitHub logo">
-              </picture> 
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/github-300.svg" />
+                <img src="./images/icons/github.svg" alt="GitHub logo" />
+              </picture>
               <span class="icon-name">GitHub</span>
               <img src="./images/level4.png" alt="level of knowledge" />
             </div>
             <div class="icon-item">
               <picture>
-                <source media="(max-width: 767px)" srcset="./images/icons/figma-300.svg"></source>
-                <img src="./images/icons/figma.svg" alt="Figma logo">
-              </picture> 
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/figma-300.svg" />
+                <img src="./images/icons/figma.svg" alt="Figma logo" />
+              </picture>
               <span class="icon-name">Figma</span>
               <img src="./images/level4.png" alt="level of knowledge" />
             </div>
           </div>
         </div>
       </section>
-  
+
       <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="h2">Portfolio</h2>
           <img
             class="screen container"
-            src="./images/fashion-store.png"
-            alt="fashion store screen"/>
-            <div class="links">
-              <a class="portfolio-link" href="#" target="_blank">
-                Online fashion store - Homepage
-              </a>
-            </div>
+            src="./images/inventory-of-things.png"
+            alt="inventory-of-things screen" />
+          <div class="links">
+            <a
+              class="portfolio-link"
+              href="https://github.com/AlonaAstakhova/inventory-of-things"
+              target="_blank">
+              Inventory of things - GitHub
+            </a>
+          </div>
           <img
             class="screen container"
-            src="./images/reebok.png"
-            alt="reebok store screen"/>
-            <div class="links">
-              <a class="portfolio-link" href="#" target="_blank">
-                Reebok Store - Concept
-              </a>
-            </div>
-          <img class="screen container" src="./images/braun.png" alt="braun store screen" />
-            <div class="links">
-              <a class="portfolio-link" href="#" target="_blank">
-                Braun Landing Page - Concept
-              </a>
-            </div>
+            src="./images/burger-restaurant.png"
+            alt="burger-restaurant screen" />
+          <div class="links">
+            <a
+              class="portfolio-link"
+              href="https://alonaastakhova.github.io/burgers/"
+              target="_blank">
+              Burger House restaurant - Homepage
+            </a>
+          </div>
+          <img
+            class="screen container"
+            src="./images/tic-tac-toe.png"
+            alt="Tic Tac Toe screen" />
+          <div class="links">
+            <a
+              class="portfolio-link"
+              href="https://alonaastakhova.github.io/Tic-Tac-Toe/"
+              target="_blank">
+              Tic Tac Toe - Game
+            </a>
+          </div>
+          <img
+            class="screen container"
+            src="./images/todo.png"
+            alt="Tic Tac Toe screen" />
+          <div class="links">
+            <a
+              class="portfolio-link"
+              href=" https://alonaastakhova.github.io/todo-app/"
+              target="_blank">
+              Todo - Application
+            </a>
+          </div>
         </div>
       </section>
-  
+
       <section class="contacts" id="contacts">
         <div class="container">
           <h2 class="h2">Contacts</h2>
@@ -157,23 +212,44 @@
             <button class="button">Send message</button>
           </div>
           <div class="contacts-icons">
-            <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/linkedin-100.svg"></source>
+            <a
+              href="https://www.linkedin.com/in/astakhova-alona/"
+              target="_blank">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/linkedin-100.svg" />
+                <img
+                  class="contacts-icon"
+                  src="./images/icons/linkedin-contacts.svg"
+                  alt="LinkedIn" />
+              </picture>
+            </a>
+            <a href="https://github.com/AlonaAstakhova" target="_blank">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/icons/github-contacts-100.svg" />
+                <img
+                  class="contacts-icon"
+                  src="./images/icons/github-contacts.svg"
+                  alt="GitHub" />
+              </picture>
+            </a>
+            <a href="https://leetcode.com/alyonasta/" target="_blank">
               <img
-              class="contacts-icon"
-              src="./images/icons/linkedin-contacts.svg"
-              alt="LinkedIn" />
-            </picture>         
-            <picture>
-              <source media="(max-width: 767px)" srcset="./images/icons/github-contacts-100.svg"></source>
+                class="contacts-icon"
+                src="./images/icons/leetcode.svg"
+                alt="LeetCode" />
+            </a>
+            <a
+              href="https://www.codewars.com/users/AlonaAstakhova"
+              target="_blank">
               <img
-              class="contacts-icon"
-              src="./images/icons/github-contacts.svg"
-              alt="GitHub" />
-            </picture>     
-  
-            <img class="contacts-icon" src="./images/icons/leetcode.svg" alt="LeetCode" />
-            <img class="contacts-icon" src="./images/icons/codewars.svg" alt="CodeWars" />
+                class="contacts-icon"
+                src="./images/icons/codewars.svg"
+                alt="CodeWars" />
+            </a>
           </div>
           <p class="contacts-text-like">
             Like me on <br />LinkedIn, GitHub, LeetCode, CodeWars
@@ -181,6 +257,5 @@
         </div>
       </section>
     </div>
-
   </body>
 </html>
