@@ -34,10 +34,31 @@ for (let i = 0; i < links.length; i++) {
   }
 }
 
+// Открыть модальное окно
 document.getElementById('send-message').addEventListener('click', function () {
   document.getElementById('modal').classList.add('open')
 })
 
+// Закрыть модальное окно
 document.getElementById('close-modal').addEventListener('click', function () {
   document.getElementById('modal').classList.remove('open')
+})
+
+// Закрыть модальное окно при нажатии на Esc
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.getElementById('modal').classList.remove('open')
+  }
+})
+
+// Закрыть модальное окно при клике вне его
+document
+  .querySelector('#modal .modal-box')
+  .addEventListener('click', (event) => {
+    event._isClickWithInModal = true
+  })
+
+document.getElementById('modal').addEventListener('click', (event) => {
+  if (event._isClickWithInModal) return
+  event.currentTarget.classList.remove('open')
 })
