@@ -294,23 +294,36 @@
         </button>
         <div class="message">
           <img src="images/icons/message.svg" alt="icon" />
-          <span>Message</s>
+          <span>Message</span>
         </div>
-        <div class="form-inputs">
+        <form action="https://formspree.io/f/xgejpopn" method="post">
+         <!-- <form action=""> -->
           <div class="form-input">
-            <input type="text" placeholder="Name" id="name" />
+            <!-- <label>Name</label>
+            <input type="text" name="name" /> -->
+            <input type="text" placeholder="Name" name="name" id="name" />
           </div>
           <div class="form-input">
-            <input type="text" placeholder="Phone No." id="phone" />
+            <input type="text" placeholder="Phone No." name="phone" id="phone"/>
           </div>
           <div class="form-input">
-            <input type="text" placeholder="Email Address" id="email" />
+            <label id="email-label">Email</label>
+            <input type="email" spellcheck="false" name="email" id="email" onkeyup="validateEmail()"/>
+            <span id="email-error"></span>
           </div>
           <div class="form-input">
-            <textarea name="text" placeholder="Message" id="message" rows="10"></textarea>
+            <textarea
+              name="text"
+              placeholder="Message"
+              name="message"
+              rows="7"></textarea>
           </div>
-          <button class="button-submit" id="form-action">Submit</button>
-        </div>
+          <input
+            type="submit"
+            value="Submit"
+            class="button-submit"
+            id="form-action" />
+        </form>
       </div>
     </div>
   </body>

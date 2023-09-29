@@ -229,6 +229,7 @@ body {
   border-radius: 30px;
   font-size: 18px;
   margin-bottom: 92px;
+  cursor: pointer;
 }
 
 .contacts-icons {
@@ -310,27 +311,40 @@ body {
   text-align: left;
 }
 
-/* .form-inputs {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-} */
-
 .form-input {
-  margin: 10px;
+  margin: 0px;
+  position: relative;
+  z-index: 10;
 }
 
 .form-input input,
 textarea {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #000;
+  border: 0;
+  border-bottom: 1.5px solid #000;
   outline: none;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 100;
   min-width: 220px;
   min-height: 30px;
+  padding-top: 15px;
+}
+
+#email-label {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #777;
+  transition: bottom 0.3s;
+}
+
+#email-error {
+  display: block;
+  top: 100%;
+  font-size: 10px;
+  font-weight: 100;
+  color: red;
 }
 
 .button-submit {

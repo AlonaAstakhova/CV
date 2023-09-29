@@ -62,3 +62,24 @@ document.getElementById('modal').addEventListener('click', (event) => {
   if (event._isClickWithInModal) return
   event.currentTarget.classList.remove('open')
 })
+
+//Валидация формы отправки email
+let email = document.getElementById('email')
+let emailLabel = document.getElementById('email-label')
+let emailError = document.getElementById('email-error')
+
+let name = document.getElementById('name')
+let phone = document.getElementById('phone')
+let message = document.getElementById('message')
+
+function validateEmail() {
+  emailLabel.style.bottom = '35px'
+  if (!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    emailError.innerHTML = 'Please enter a valid email'
+    return false
+  }
+  emailLabel.style.bottom = '20px'
+  emailError.innerHTML = ''
+  return true
+}
+
